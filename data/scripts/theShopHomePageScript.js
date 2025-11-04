@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
                 });
                 productContainers[x].addEventListener('click', () => {
-                  window.location.href = '/dashboard/the-shop/product?code=' + z;
+                  window.location.href = '/product?code=' + z;
                 });
             }
         }
