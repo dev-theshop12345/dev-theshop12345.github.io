@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Shop -</title>
+    <style>
+      font-family: sans-serif;
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+    <script>
+      window.onresize = function() {
+        window.resizeTo(500,500);
+      }
+      window.onclick = function() {
+        window.resizeTo(500,500);
+      }
+    </script>
+  </head>
+  <body>
+    <p><img src="/data/images/the-shop-loading-icon.gif"/></p>
+    
+  </body>
+</html>
+<script>
+  document.getElementById('p').innerHTML = sessionStorage.getItem('theShopCart');
+</script>

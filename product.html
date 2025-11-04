@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab-title">The Shop | The Boys Website V2</title>
+    <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
+    <style>
+      article {
+        font-family: sans-serif !important;
+      }
+      div.logoheading {
+        height: auto;
+        width: auto;
+      }
+      
+      div.logoheading img {
+        width: 75%;
+        /*max-width: 150px;*/
+        height: 75%;
+        border: none;
+      }
+      div.productcontainer {
+        width: auto;
+        height: auto;
+      }
+      div.productcontainer img {
+        width: 75%;
+        max-width: 500px;
+        height: 75%;
+        border: 2px solid black;
+        margin-right: 1px;
+      }
+      button.purchaseButton {
+        display: block;
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      button.purchaseButton:hover {
+        background-color: #45a049;
+      }
+      
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: auto;
+      }
+      td, th {
+        border: 2px solid #555555;
+        text-align: center;
+        padding: 8px;
+      }
+      /*div.productcontainer {
+        width: auto;
+        height: auto;
+        border: 2px solid black;
+        width: fit-content;
+        block-size: fit-content;
+      }
+      div.productcontainer img {
+        width: 75%;
+        max-width: 150px;
+        height: 75%;
+      }*/
+    </style>
+    <script src="/data/scripts/adminData.js"></script>
+    <script src="/data/scripts/admin_proper_login_check.js"></script>
+    <script src="/data/scripts/theShopData.js"></script>
+    <!--<script src="/data/scripts/makePageAdminOnly.js"></script>-->
+    <script src="/data/scripts/theShopProductPageScript.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <div class="logoheading">
+        <p><img src="/data/images/the-shop-logo.png"></p>
+        <br>
+        <center>
+          <p><a href="/dashboard/the-shop" class="hl1">Home</a> | <a href="/dashboard/the-shop/cart" class="hl1">Cart</a></p>
+        </center>
+        <hr>
+      </div>
+      <div class="productcontainer">
+        <p><image src="/data/images/the-shop-loading-icon.gif" style="float: left;" id="productImage"></p>
+        <h1 id="productTitle">Loading...</h1>
+        <p></p>
+        <h3 id="productPrice">£0.00</h3>
+        <!--<table>
+          <th id="decreaseQuantity">-</th>
+          <th id="quantity">0</th>
+          <th id="increaseQuantity">+</th>
+        </table>-->
+        <center>
+          <p>
+            
+          </p>
+          <button id="addToCartButton" class="purchaseButton" onclick="addToCart()">Add To Cart</button>
+        </center>
+        <div id="description"></div>
+      </div>
+    </article>
+  </body>
+</html>

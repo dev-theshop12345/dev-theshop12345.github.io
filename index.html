@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab-title">The Shop | The Boys Website V2</title>
+    <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
+    <style>
+      article {
+        font-family: sans-serif !important;
+      }
+      div.logoheading {
+        height: auto;
+        width: auto;
+        align-content: center;
+      }
+      
+      div.logoheading img {
+        width: 75%;
+        /*max-width: 150px;*/
+        height: 75%;
+        border: none;
+      }
+      div.productscontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;     /* allows wrapping to the next row */
+        gap: 16px;
+        width: auto;
+        height: auto;
+      }
+      
+      div.productcontainer {
+        width: auto;
+        height: auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #E0E0E0;
+        width: fit-content;
+        block-size: fit-content;
+        transition: transform 0.3s ease; /* smooth animation */
+      }
+      div.productcontainer img {
+        width: 75%;
+        max-width: 150px;
+        height: 75%;
+        margin-top: 5px;
+      }
+    </style>
+    <script src="/data/scripts/adminData.js"></script>
+    <script src="/data/scripts/admin_proper_login_check.js"></script>
+    <script src="/data/scripts/theShopData.js"></script>
+    <!--<script src="/data/scripts/makePageAdminOnly.js"></script>-->
+    <script src="/data/scripts/theShopHomePageScript.js" defer></script>
+  </head>
+  <body>
+   <!-- <header> 
+      <div class="logoheading">
+        <p><img src="/data/images/the-shop-logo.png"/></p>
+      </div>
+      <h1>Home</h1>
+      <nav>
+        <ul>
+          <li><a href="index">Home</a></li>
+          <li><a href="cart">Cart</a></li>
+        </ul>
+      </nav>
+    </header> -->
+    <article>
+      <div class="logoheading">
+        <p><img src="/data/images/the-shop-logo.png"/></p>
+        <br>
+        <center>
+          <p><strong><u>Home</u></strong> | <a href="/dashboard/the-shop/cart" class="hl1">Cart</a></p>
+        </center>
+        <hr>
+      </div>
+      <h1>Popular</h1>
+      <div class="productscontainer">
+      <div class="productcontainer" id="562394"></div>
+      <div class="productcontainer" id="562394"></div>
+      </div>
+      <h1>Great Deals!</h1>
+      <div class="productscontainer">
+        <div class="productcontainer" id="562394"></div>
+      </div>
+    </article>
+  </body>
+</html>
