@@ -13,10 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 function addToCart() {
   if ((sessionStorage.getItem('theShopCart') == null) || (sessionStorage.getItem('theShopCart') == '')) {
-    sessionStorage.setItem('theShopCart', bgh);
+    sessionStorage.setItem('theShopCart', `${bgh}: [1]`);
     alert('Item succesfully added to cart!');
   } else {
-    sessionStorage.setItem('theShopCart', sessionStorage.getItem('theShopCart') + ' ' + bgh);
+    eval('let cart = ' + sessionStorage.getItem('theShopCart'));
+    if bgh in cart {
+      alert('IN CART');
+    }
+    cart[bgh][0] = cart[bgh][0] + 1
+    //sessionStorage.setItem('theShopCart', sessionStorage.getItem('theShopCart') + ' ' + bgh);
     alert('Item succesfully added to cart!');
   }
 }
