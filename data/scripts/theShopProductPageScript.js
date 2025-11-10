@@ -17,7 +17,7 @@ function addToCart() {
     alert('Item succesfully added to cart!');
   } else {
     eval('let cart = ' + sessionStorage.getItem('theShopCart'));
-    if bgh in cart {
+    if (bgh in cart) {
       alert('IN CART');
     }
     cart[bgh][0] = cart[bgh][0] + 1
